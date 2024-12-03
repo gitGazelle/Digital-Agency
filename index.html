@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E40AF', // WebX primary color
+            secondary: '#1E3A8A', // WebX secondary color
+            accent: '#F59E0B', // WebX accent color
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    .active-link {
+      color: #72ec53;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="#" class="text-2xl font-bold text-primary">Digital Agency</a>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-accent">Home</a></li>
+          <li><a href="#about" class="hover:text-accent">About</a></li>
+          <li><a href="#services" class="hover:text-accent">Services</a></li>
+          <li><a href="#features" class="hover:text-accent">Features</a></li>
+          <li><a href="#blog" class="hover:text-accent">Blog</a></li>
+          <li><a href="#contact" class="hover:text-accent">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="bg-primary text-white py-20 mt-16 text-center">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold mb-4">Welcome to Our Digital Agency</h1>
+      <p class="text-lg mb-8">Crafting innovative solutions for your digital success.</p>
+      <a href="#contact" class="bg-white text-primary py-3 px-6 rounded-lg hover:bg-secondary hover:text-white transition">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray-100 py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">About Us</h2>
+      <p class="text-lg leading-relaxed max-w-3xl mx-auto">
+        We are a team of passionate professionals dedicated to providing cutting-edge digital solutions. 
+        From web development to branding, we focus on delivering exceptional results that drive growth.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-4">Web Development</h3>
+          <p>Create responsive and user-friendly websites tailored to your business needs.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-4">Digital Marketing</h3>
+          <p>Reach your audience effectively with SEO, social media, and paid advertising.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-4">Branding</h3>
+          <p>Build a strong brand identity with our creative design and branding solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Offer Section -->
+<section id="offer" class="py-20 bg-gradient-to-b from-gray-100 to-gray-50">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-extrabold text-gray-800 mb-6">What We Offer</h2>
+    <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+      Unlock your business potential with our tailored digital solutions.
+    </p>
+    
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      
+      <!-- Service Card 1 -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 p-8">
+        <div class="w-16 h-16 mx-auto bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-search text-2xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">Strategy & Research</h3>
+        <p class="text-gray-600">Comprehensive strategies backed by in-depth research to achieve your business goals effectively.</p>
+      </div>
+      
+      <!-- Service Card 2 -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 p-8">
+        <div class="w-16 h-16 mx-auto bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-code text-2xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">Web Development</h3>
+        <p class="text-gray-600">Custom-built websites that are fast, responsive, and designed to drive results for your business.</p>
+      </div>
+      
+      <!-- Service Card 3 -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 p-8">
+        <div class="w-16 h-16 mx-auto bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-paint-brush text-2xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">UI/UX Creative Design</h3>
+        <p class="text-gray-600">Delivering intuitive and visually appealing designs to enhance user experience and engagement.</p>
+      </div>
+      
+      <!-- Service Card 4 -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 p-8">
+        <div class="w-16 h-16 mx-auto bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-bullhorn text-2xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">Digital Marketing</h3>
+        <p class="text-gray-600">Reaching your audience with precision through SEO, PPC, social media, and more.</p>
+      </div>
+      
+      <!-- Service Card 5 -->
+      <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 p-8">
+        <div class="w-16 h-16 mx-auto bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-6">
+          <i class="fas fa-mobile-alt text-2xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">App Development</h3>
+        <p class="text-gray-600">Developing seamless and high-performing mobile and web applications tailored to your needs.</p>
+      </div>
+      
+    </div>
+    
+    <!-- Action Button -->
+    <div class="mt-12">
+      <a href="#contact" class="inline-block bg-gradient-to-r from-blue-600 to-blue-400 text-white py-3 px-8 rounded-full text-lg font-semibold shadow-lg hover:from-blue-700 hover:to-blue-500 hover:shadow-xl transition">
+        Get Started
+      </a>
+    </div>
+  </div>
+</section>
+
+      
+      
+    
+    <!-- Action Button -->
+    <div class="mt-12">
+      <a href="#contact" class="inline-block bg-gradient-to-r from-blue-600 to-blue-400 text-white py-3 px-8 rounded-full text-lg font-semibold shadow-lg hover:from-blue-700 hover:to-blue-500 hover:shadow-xl transition">
+        Get Started
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Features Section -->
+  <section id="features" class="bg-gray-100 py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="flex items-center">
+          <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex justify-center items-center">
+            <i class="fas fa-cogs text-2xl"></i>
+          </div>
+          <div class="ml-4">
+            <h3 class="text-xl font-bold">Customizable Solutions</h3>
+            <p>Tailored to fit your specific business needs and goals.</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex justify-center items-center">
+            <i class="fas fa-chart-line text-2xl"></i>
+          </div>
+          <div class="ml-4">
+            <h3 class="text-xl font-bold">Data-Driven Insights</h3>
+            <p>Make informed decisions with real-time analytics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Latest Blog Posts</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-4">10 Tips for Building a Website</h3>
+          <p>Discover essential tips for creating a website that stands out.</p>
+          <a href="#" class="text-blue-600 hover:underline">Read More</a>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-4">The Future of Digital Marketing</h3>
+          <p>Explore emerging trends shaping the digital marketing landscape.</p>
+          <a href="#" class="text-blue-600 hover:underline">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+      <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+        <div class="mb-4">
+          <label for="name" class="block text-left mb-2 font-bold">Name</label>
+          <input type="text" id="name" class="w-full border-gray-300 p-3 rounded-md" placeholder="Your Name" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-left mb-2 font-bold">Email</label>
+          <input type="email" id="email" class="w-full border-gray-300 p-3 rounded-md" placeholder="Your Email" required>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-left mb-2 font-bold">Message</label>
+          <textarea id="message" class="w-full border-gray-300 p-3 rounded-md" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Our Services -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Our Services</h3>
+        <ul>
+          <li>Strategy & Research</li>
+          <li>Web Development</li>
+          <li>Web Solution</li>
+          <li>Digital Marketing</li>
+          <li>App Design</li>
+          <li>App Development</li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Company</h3>
+        <ul>
+          <li>About Company</li>
+          <li>Our Services</li>
+          <li>Our Portfolio</li>
+          <li>Our Blog</li>
+          <li>Latest News</li>
+          <li>Contact Us</li>
+          <footer class="bg-gray-800 text-white py-4">
+            <div class="container mx-auto text-center">
+              <p>© 2024 Digital Agency. All rights reserved.</p> 
+        </ul>
+      </div>
+
+      <!-- Contact Us -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+        <p>786 Malabar Hill, Mumbai, India</p>
+        <p>+919321582803</p>
+        <p>info@digitalagency.com</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="text-blue-500"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-blue-400"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-pink-500"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-blue-700"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Add JavaScript for interactivity -->
+  <script>
+    // Example: Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
